@@ -6,3 +6,5 @@ alias ws='webstorm'
 alias k='kubectl'
 alias t='terraform'
 alias l='ls -lah'
+alias ws='open -na "WebStorm.app" --args "$@"'
+
