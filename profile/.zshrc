@@ -8,3 +8,7 @@ alias t='terraform'
 alias l='ls -lah'
 alias ws='open -na "WebStorm.app" --args "$@"'
 
+# Decode jwt
+djwt() {
+  echo "$1" | jq -R 'split(".") | .[1] | @base64d | fromjson'
+}
